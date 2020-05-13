@@ -9,10 +9,6 @@ services:
       - learnplex-tier
   postgres:
     image: postgres:10.6-alpine
-    environment:
-    POSTGRES_USER: postgres
-    POSTGRES_DB: coderplex
-    POSTGRES_PASSWORD: dev
     ports:
       - '5438:5432'
     volumes:
